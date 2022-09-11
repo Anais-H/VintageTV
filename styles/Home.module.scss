@@ -1,0 +1,34 @@
+.layout {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  .tvContainer {
+    background-color: aqua;
+    flex-grow: 1;
+  }
+
+  .chatContainer {
+    background-color: slateblue;
+    min-width: 17rem;
+    transition: min-width ease 3s;
+    overflow: hidden;
+
+    &.hidden {
+      min-width: 0;
+    }
+  }
+}
+
+.chatToggleButton {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+}
+
+@media (orientation: portrait) {
+  .layout {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,46 @@
+@import './variables';
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .messagesContainer {
+        flex-grow: 1;
+        margin: $sm;  
+        overflow-y: auto; 
+    }
+
+
+    .inputContainer {
+        background-color: burlywood;
+        height: 10rem;
+        padding: $sm;
+
+        .chatForm {
+            width: 100%;
+            height: 100%;
+
+            .messageInput {
+                width: 100%;
+                height: 60%;
+            }
+
+            .submitBtn {
+                float: right;
+            }
+        }
+    }
+}
+
+
+@media (orientation: portrait) {
+    .layout {
+        flex-direction: row;
+        height: 20rem;
+
+        .inputContainer {
+            height: 100%;
+        }
+    }
+  }

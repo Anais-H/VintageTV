@@ -1,0 +1,23 @@
+@import './variables';
+
+.container {
+    display: flex;
+    gap: $sm;
+    align-items: center;
+    flex-direction: row;
+    padding: $sm;
+    border: solid 1px grey;
+    border-radius: 5px;
+    margin-bottom: $sm;
+}
+
+.username {
+    font-size: $fs-sm;
+    font-weight: bold;
+}
+
+.img {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
